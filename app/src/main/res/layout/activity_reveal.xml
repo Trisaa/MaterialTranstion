@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_reveal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="acon ipsum dolor amet cupidatat bresaola minim, aliquip beef aute ea porchetta. Meatball brisket do, rump in beef ea ham hock spare ribs mollit qui dolore ipsum voluptate cow. Drumstick prosciutto salami duis jerky jowl. Mollit ball tip short ribs doner fugiat frankfurter leberkas andouille kevin pork loin nostrud ham culpa. Rump pariatur ham hock excepteur picanha pork. Corned beef flank proident shankle rump." />
+
+    <TextView
+        android:id="@+id/tv_reveal2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_blue"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="This is the content, we set it visible when the animation finished"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_green"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:background="@drawable/circle_green"
+        android:transitionName="share" />
+
+</RelativeLayout>
