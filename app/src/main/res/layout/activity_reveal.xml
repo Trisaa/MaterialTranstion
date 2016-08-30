@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="invisible"
         android:text="acon ipsum dolor amet cupidatat bresaola minim, aliquip beef aute ea porchetta. Meatball brisket do, rump in beef ea ham hock spare ribs mollit qui dolore ipsum voluptate cow. Drumstick prosciutto salami duis jerky jowl. Mollit ball tip short ribs doner fugiat frankfurter leberkas andouille kevin pork loin nostrud ham culpa. Rump pariatur ham hock excepteur picanha pork. Corned beef flank proident shankle rump." />
 
     <TextView

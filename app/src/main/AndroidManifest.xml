@@ -20,10 +20,12 @@
             android:label="TransitionActivity"></activity>
         <activity
             android:name=".ShareElementsActivity"
-            android:label="ShareElementsActivity"></activity>
+            android:label="ShareElementsActivity"
+            android:theme="@style/AppTheme.Explode"></activity>
         <activity
             android:name=".RevealActivity"
-            android:label="RevealActivity"></activity>
+            android:label="RevealActivity"
+            ></activity>
     </application>
 
 </manifest>

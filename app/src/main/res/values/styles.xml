@@ -9,8 +9,13 @@
         <!-- 允许使用transitions -->
         <item name="android:windowContentTransitions">true</item>
         <!--是否覆盖执行，其实可以理解成是否同步执行还是顺序执行-->
-        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
+    </style>
+
+    <style name="AppTheme.Explode" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
     </style>
 
 </resources>

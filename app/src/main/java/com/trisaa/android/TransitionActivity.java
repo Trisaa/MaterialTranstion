@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,8 +32,7 @@ public class TransitionActivity extends BaseActivity {
         switch (transition) {
             case "explode":
                 imageView.setBackgroundResource(R.drawable.circle_red);
-                Explode explode = new Explode();
-                explode.setDuration(1000L);
+                Explode explode = (Explode) TransitionInflater.from(this).inflateTransition(R.transition.explode);
                 getWindow().setEnterTransition(explode);
                 break;
             case "slide":

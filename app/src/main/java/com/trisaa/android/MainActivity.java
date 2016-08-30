@@ -4,6 +4,7 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.TransitionInflater;
 import android.util.Pair;
 import android.view.View;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_share_elements).setOnClickListener(this);
         findViewById(R.id.tv_reveal).setOnClickListener(this);
         mIntent = new Intent();
+        getWindow().setExitTransition(TransitionInflater.from(this).inflateTransition(R.transition.slide));
     }
 
     @Override
@@ -46,11 +48,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this
                         , Pair.create(findViewById(R.id.img_share), "share")
                         , Pair.create(findViewById(R.id.tv_share), "share_text"));
+                //5.0以下兼容
+                /*ActivityOptionsCompat activityOptionsCompat1 = ActivityOptionsCompat.makeSceneTransitionAnimation(this
+                        , Pair.create(findViewById(R.id.img_share), "share")
+                        , Pair.create(findViewById(R.id.tv_share), "share_text"));*/
                 startActivity(mIntent, transitionActivityOptions.toBundle());
                 break;
             case R.id.tv_reveal:
                 mIntent.setClass(this, RevealActivity.class);
                 ActivityOptions transitionActivityOptions2 = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, findViewById(R.id.img_reveal_share), "share");
+                //5.0以下兼容
+                //ActivityOptionsCompat activityOptionsCompat2 = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, findViewById(R.id.img_reveal_share), "share");
                 startActivity(mIntent, transitionActivityOptions2.toBundle());
                 break;
         }

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
  * Created by lebron on 16-8-26.
  */
 public class ShareElementsFragment1 extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -25,6 +26,13 @@ public class ShareElementsFragment1 extends Fragment {
             public void onClick(View view) {
                 Slide slideTransition = new Slide(Gravity.LEFT);
                 slideTransition.setDuration(1000L);
+                /*changeBounds - 改变目标视图的布局边界
+
+                changeClipBounds - 裁剪目标视图边界
+
+                changeTransform - 改变目标视图的缩放比例和旋转角度
+
+                changeImageTransform - 改变目标图片的大小和缩放比例*/
                 ChangeBounds changeBoundsTransition = new ChangeBounds();
                 changeBoundsTransition.setDuration(1000L);
 
