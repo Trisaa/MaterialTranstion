@@ -1,6 +1,4 @@
 
-原文[请戳这里](http://www.jianshu.com/p/0af52be90ae6)
-
 [Android Transition Framwork](https://developer.android.com/training/transitions/overview.html) 主要用来做**三件事**：
 1. Activity间的转场动画；
 2. 不同Activity或Fragment间元素共享，让交互更连贯；
