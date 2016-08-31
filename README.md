@@ -1,5 +1,5 @@
 
-[Android Transition Framwork](https://developer.android.com/training/transitions/overview.html) 主要用来做**三件事**：
+[Android Transition Framework](https://developer.android.com/training/transitions/overview.html) 主要用来做**三件事**：
 1. Activity间的转场动画；
 2. 不同Activity或Fragment间元素共享，让交互更连贯；
 3. 同一个Activity之间一些View的变换动画。
