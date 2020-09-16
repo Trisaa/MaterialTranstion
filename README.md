@@ -24,7 +24,7 @@
   <item name="android:windowAllowReturnTransitionOverlap">false</item>
 </style>
 ```
-######MainActivity.java(部分关键代码)
+###### MainActivity.java(部分关键代码)
 ```java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +54,7 @@ switch (view.getId()) {
 }
 ```
 用`startActivity(mIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());`来替换之前的startActivity();
-######TransitionActivity.java(部分关键代码)
+###### TransitionActivity.java(部分关键代码)
 ```java
 switch (transition) {
     case "explode":
@@ -83,7 +83,7 @@ switch (transition) {
 * Transition Framework找到B的进入动画（Explode）并且应用；
 * 返回事件被触发后，Transition Framework执行进入动画和退出动画的逆向过程（但是如果我们定义了returnTransition和reenterTransition动画，返回效果将会按照我们定义的动画执行）。
 
-#####2.元素共享
+##### 2.元素共享
 ***
 ![](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/shared_element.png)
 
@@ -185,7 +185,7 @@ ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionA
 startActivity(mIntent, transitionActivityOptions.toBundle());
 ```
 
-#####3.水波纹散开效果
+##### 3.水波纹散开效果
 这里我们实现了在RevealActivity中两个View的更换，点击右下角切换按钮，水波纹开始散开，第一个View逐渐消失，第二个View逐渐出现。
 
  ![](http://7xoww9.com1.z0.glb.clouddn.com/transition_reveal.gif)
@@ -269,15 +269,15 @@ protected void onCreate(@Nullable Bundle savedInstanceState) {
 ```
 createCircularReveal的各参数代表的具体含义[参照这里](https://developer.android.com/reference/android/view/ViewAnimationUtils.html)。
 
-#####Demo源码
+##### Demo源码
 https://github.com/Trisaa/MaterialTranstion
 
-#####参考资料
+##### 参考资料
 https://github.com/lgvalle/Material-Animations
 
 https://github.com/hehonghui/android-tech-frontier/tree/master/others/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAAndroid%20%E6%96%B0%E7%89%B9%E6%80%A7-Transition-Part-1
 
-#####其他转场酷炫的动画
+##### 其他转场酷炫的动画
 
 [折叠翻页效果](https://github.com/openaphid/android-flip])
 
